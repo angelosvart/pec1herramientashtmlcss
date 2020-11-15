@@ -314,7 +314,7 @@ footer .arrow i {
 		width: calc(100vw - 2.5em);
 	}
 
-	header .logo,  header .container > a{
+	header .logo,  header .container > i {
 		font-size: 1.2em;
 	}	
 
@@ -352,8 +352,12 @@ footer .arrow i {
 		width: calc(100vw - 7em);
 	}
 
-	header .logo, header .container > i {
+	header .logo {
 		font-size: 1.4em;
+	}
+
+	header .container > i {
+		display: none;
 	}
 
 	main .books {
@@ -380,10 +384,6 @@ footer .arrow i {
 		width: 80%;
 		font-size: 1.3em;
 		padding: 2em;
-	}
-
-	header .container > i {
-		display: none;
 	}
 
 	main nav#main-menu {
