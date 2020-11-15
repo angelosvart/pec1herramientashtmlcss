@@ -83,9 +83,11 @@ header a {
 	color:var(--main-lightest-color);
 }
 
-header .container > a {
+header .container > i {
 	justify-self: end;
 	align-self: center;
+	cursor: pointer;
+	color:var(--main-lightest-color);
 }
 
 header i.fa-book-reader {
@@ -93,7 +95,7 @@ header i.fa-book-reader {
 	margin-right: 0.5em;
 }
 
-header a:focus,  header a:hover, header a:hover i.fa-book-reader {
+header a:focus,  header a:hover, header a:hover i.fa-book-reader, header a:focus i.fa-book-reader, header .container > i:hover, header .container > i:focus  {
 	color: var(--main-darker-accent);
 }
 
@@ -350,7 +352,7 @@ footer .arrow i {
 		width: calc(100vw - 7em);
 	}
 
-	header .logo, header .container > a {
+	header .logo, header .container > i {
 		font-size: 1.4em;
 	}
 
@@ -380,7 +382,7 @@ footer .arrow i {
 		padding: 2em;
 	}
 
-	header .container > a {
+	header .container > i {
 		display: none;
 	}
 
