@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>PEC 1 - Herramientas HTML y CSS</title>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-book-reader" aria-hidden="true"></i>Portal Literario</a>
+            </div>
+            <a href="#" title="Menú" id="menu"><i class="fas fa-bars" aria-hidden="true"></i><span class="sr-only">Mostrar menú</span></a>
+        </div>
+    </header>
+    <main>
+        <nav id="main-menu">
+            <div class="closebtn"><i class="fas fa-times"  aria-hidden="true" title="Cerrar Menú"></i><span class="sr-only">Cerrar menú</span></div>
+            <ul>
+                <li><a href="aventura.html">Novela de Aventuras</a></li>
+                <li><a href="fantasia.html" class="active">Novela de Fantasía</a></li>
+                <li><a href="#">Novela Policíaca</a></li>
+                <li><a href="#">Novela de Terror</a></li>
+                <li><a href="#">Novela Romántica</a></li>
+                <li><a href="#">Novela Histórica</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <nav>
+				<ul class="breadcrumbs">
+					<li><a href="index.html">Inicio</a></li>
+                    <li><a href="fantasia.html">Novela de Fantasía</a></li>
+                    <li>Alicia en el país de las maravillas</li>	
+				</ul>
+            </nav>
+            <article>
+                <h1>Alicia en el país de las maravillas, Lewis Carroll</h1>
+                <div class="book-image">
+                    <img src="./img/AlicesAdventuresInWonderlandTitlePage.jpg" alt="Portada del libro Alicia en el País de las Maravillas">
+                </div>
+                <p><cite>Las aventuras de Alicia en el país de las maravillas</cite>, comúnmente abreviado como <cite>Alicia en el país de las maravillas</cite>, es una novela de fantasía escrita por el matemático, lógico, fotógrafo y escritor británico Charles Lutwidge Dodgson, bajo el seudónimo de Lewis Carroll, publicada en 1865. La historia cuenta cómo una niña llamada Alicia cae por un agujero, encontrándose en un mundo peculiar, poblado por humanos y criaturas antropomórficas. El libro juega con la lógica, dando a la novela gran popularidad tanto en niños como en adultos. Está considerada una de las mejores novelas del género del Sinsentido. Su narrativa y estructura, junto con sus personajes, han sido una gran influencia tanto en la cultura popular como en la literatura, sobre todo en el género fantástico.</p>
+                <p>En esta obra aparecen algunos de los personajes más famosos de Lewis Carroll, como el Conejo Blanco, la Liebre de Marzo, el Sombrerero, la Oruga azul, el Gato de Cheshire o la Reina de Corazones;1​ quienes han cobrado importancia suficiente como para ser reconocidos fuera del mundo de Alicia.</p>
+                <p>Solo se conservan 22 copias de la primera edición de 1865, de las cuales 17 pertenecen a distintas bibliotecas, y las restantes forman parte de las colecciones privadas de algunos lectores. El libro tiene una segunda parte, menos conocida, llamada <cite>A través del espejo y lo que Alicia encontró allí (Through the looking-glass, and what Alice found there, de 1871)</cite>. Varias adaptaciones cinematográficas combinan elementos de ambos libros.</p>
+                <p>La obra ha sido traducida a numerosos idiomas, incluido el esperanto. En 1998, un ejemplar de la primera edición del libro se vendió en subasta por la suma de 1,5 millones de dólares, y se convirtió así en el libro para niños más caro hasta ese momento.</p>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="arrow">
+                <a href="#top" title="Volver al inicio"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i><span class="sr-only">Volver al inicio de la página</span></a>
+            </div>
+            <p>2020 Angelo Svart</p>
+            <p>Textos elaborados a partir de información consultada en <a href="https://es.wikipedia.org/">Wikipedia</a></p>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

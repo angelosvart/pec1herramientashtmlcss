@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>PEC 1 - Herramientas HTML y CSS</title>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-book-reader" aria-hidden="true"></i>Portal Literario</a>
+            </div>
+            <a href="#" title="Menú" id="menu"><i class="fas fa-bars" aria-hidden="true"></i><span class="sr-only">Mostrar menú</span></a>
+        </div>
+    </header>
+    <main>
+        <nav id="main-menu">
+            <div class="closebtn"><i class="fas fa-times"  aria-hidden="true" title="Cerrar Menú"></i><span class="sr-only">Cerrar menú</span></div>
+            <ul>
+                <li><a href="aventura.html">Novela de Aventuras</a></li>
+                <li><a href="fantasia.html">Novela de Fantasía</a></li>
+                <li><a href="#">Novela Policíaca</a></li>
+                <li><a href="#">Novela de Terror</a></li>
+                <li><a href="#">Novela Romántica</a></li>
+                <li><a href="#">Novela Histórica</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="books"></div>
+            <p class="small"><a href="https://www.flickr.com/photos/45256566@N04/8314929977">"Books HD"</a> de <a href="https://www.flickr.com/photos/45256566@N04">Abee5</a> tiene licencia <a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=html">CC BY 2.0</a></p>
+            <h1>Bienvenido al Portal Literario, un lugar en donde podrás encontrar información sobre de miles de libros, organizada por géneros literarios.</h1>
+            <h2>Categorías</h2>
+            <div class="cards">
+                <a href="aventura.html"><i class="fas fa-book" aria-hidden="true"></i>Novela de Aventuras</a>
+                <a href="fantasia.html"><i class="fas fa-book" aria-hidden="true"></i>Novela de Fantasía</a>
+                <a href="#"><i class="fas fa-book" aria-hidden="true"></i>Novela Policíaca</a>
+                <a href="#"><i class="fas fa-book" aria-hidden="true"></i>Novela de Terror</a>
+                <a href="#"><i class="fas fa-book" aria-hidden="true"></i>Novela Romántica</a>
+                <a href="#"><i class="fas fa-book" aria-hidden="true"></i>Novela Histórica</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="arrow">
+                <a href="#top" title="Volver al inicio"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i><span class="sr-only">Volver al inicio de la página</span></a>
+            </div>
+            <p>2020 Angelo Svart</p>
+            <p>Textos elaborados a partir de información consultada en <a href="https://es.wikipedia.org/">Wikipedia</a></p>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

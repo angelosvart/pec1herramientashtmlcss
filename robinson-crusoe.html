@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>PEC 1 - Herramientas HTML y CSS</title>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-book-reader" aria-hidden="true"></i>Portal Literario</a>
+            </div>
+            <a href="#" title="Menú" id="menu"><i class="fas fa-bars" aria-hidden="true"></i><span class="sr-only">Mostrar menú</span></a>
+        </div>
+    </header>
+    <main>
+        <nav id="main-menu">
+            <div class="closebtn"><i class="fas fa-times"  aria-hidden="true" title="Cerrar Menú"></i><span class="sr-only">Cerrar menú</span></div>
+            <ul>
+                <li><a href="aventura.html" class="active">Novela de Aventuras</a></li>
+                <li><a href="fantasia.html">Novela de Fantasía</a></li>
+                <li><a href="#">Novela Policíaca</a></li>
+                <li><a href="#">Novela de Terror</a></li>
+                <li><a href="#">Novela Romántica</a></li>
+                <li><a href="#">Novela Histórica</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <nav>
+				<ul class="breadcrumbs">
+					<li><a href="index.html">Inicio</a></li>
+                    <li><a href="aventura.html">Novela de Aventuras</a></li>
+                    <li>Robinson Crusoe</li>	
+				</ul>
+            </nav>
+            <article>
+                <h1>Robinson Crusoe, Daniel Defoe</h1>
+                <div class="book-image">
+                    <img src="./img/Robinson_Crusoe_1719_1st_edition.jpg" alt="Portada del libro Robinson Crusoe">
+                </div>
+                <p><cite>Robinson Crusoe</cite> es una de las obras más famosas del célebre escritor inglés Daniel Defoe, publicada en 1719 y considerada la primera novela inglesa. Se trata de una autobiografía ficticia del protagonista, un náufrago inglés que pasa 28 años en una remota isla desierta.</p>
+                <p>Probablemente la historia tuvo como inspiración hechos reales ocurridos a Pedro Serrano1​ y Alexander Selkirk,​ a partir de donde construiría, con una trama sencilla y auténtica, un símbolo del colonialismo, del hombre perfecto y de la moral suprema.</p>
+                <p><cite>Robinson Crusoe</cite> es la clásica novela de aventuras por antonomasia. Aunque por lo general a esta obra se le conoce simplemente por el nombre del protagonista, el título original, tal como aparece en la portada de su primera edición es:</p>
+                <p class="smaller"><cite>"La vida e increíbles aventuras de Robinson Crusoe, de York, marinero, quien vivió veintiocho años completamente solo en una isla deshabitada en las costas de América, cerca de la desembocadura del gran río Orinoco; habiendo sido arrastrado a la orilla tras un naufragio, en el cual todos los hombres murieron menos él. Con una explicación de cómo al final fue insólitamente liberado por piratas. Escrito por él mismo."</cite></p>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="arrow">
+                <a href="#top" title="Volver al inicio"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i><span class="sr-only">Volver al inicio de la página</span></a>
+            </div>
+            <p>2020 Angelo Svart</p>
+            <p>Textos elaborados a partir de información consultada en <a href="https://es.wikipedia.org/">Wikipedia</a></p>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
