@@ -267,6 +267,10 @@ main .book-image {
 	margin-bottom: 1em;
 }
 
+main .texts-grid figure {
+	margin-top: 2em;
+}
+
 main .container picture {
 	display: block;
     text-align: center;
