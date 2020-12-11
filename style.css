@@ -79,6 +79,31 @@ header .logo {
 	font-size:0.9em;
 }
 
+header .logo svg {
+	vertical-align: bottom;
+    display: inline-block;
+}
+
+header a:hover .cls-1,  header a:hover .cls-2, header a:focus .cls-1,  header a:focus .cls-2 {
+	stroke: var(--main-darker-accent);
+}
+
+header .logo a:hover svg, header .logo a:focus svg {
+	animation: bounce 0.6s ease-in;
+}
+
+@keyframes bounce {
+	0% {
+		transform: rotateY(180deg);
+	 }
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: rotateY(0);
+	}
+}
+
 header a {
 	color:var(--main-lightest-color);
 }
@@ -90,18 +115,13 @@ header .container > i {
 	color:var(--main-lightest-color);
 }
 
-header i.fa-book-reader {
-	color: var(--main-lighter-color);
-	margin-right: 0.5em;
-}
-
-header a:focus,  header a:hover, header a:hover i.fa-book-reader, header a:focus i.fa-book-reader, header .container > i:hover, header .container > i:focus  {
+header a:focus,  header a:hover, header .container > i:hover, header .container > i:focus  {
 	color: var(--main-darker-accent);
 }
 
 main {
-	margin-bottom: 1.5em;
-	animation: fadeIn 1s;
+	margin-bottom: 1em;
+	animation: fadeIn 0.8s ease-in;
 }
 
 @keyframes fadeIn {
@@ -144,7 +164,6 @@ main nav#main-menu ul li a:hover, main nav#main-menu ul li a:focus {
 	color: var(--main-darker-accent);
 }
 
-
 main nav#main-menu .closebtn {
 	margin-right: 1em;
 	margin-top: 1em;
@@ -169,6 +188,10 @@ main .small {
 	opacity: 0.7;
 }
 
+main .half {
+	width: 50%;
+}
+
 main .small a {
 	color:var(--main-lightest-color);
 }
@@ -178,14 +201,12 @@ main .small a:hover, main .small a:focus {
 }
 
 main .books {
-	width: 100%;
-	background-image: url('./img/books.jpg');
-	background-size: cover;
-	background-position: center 70%;
-	background-repeat: no-repeat;
-	height: 15em;
-	margin-bottom: 0.4em;
+	margin-bottom: 0.5em;
 	margin-top: 0.5em;
+}
+
+main .books img {
+	width: 100%;
 }
 
 main .cards {
@@ -193,6 +214,7 @@ main .cards {
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	row-gap: 1em;
 	column-gap: 1em;
+	grid-auto-rows: 1fr;
 }
 
 main .cards a {
@@ -203,12 +225,15 @@ main .cards a {
 	background-color: var(--main-lightest-color);
 	border-radius: 6px;
 	padding: 1em;
+	height: 100%;
+	display: grid;
+	align-items: center;
+	transition: opacity 0.3s ease-out;
 }
 
 main .cards a:hover, main .cards a:focus {
 	box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.7);
 	opacity: 0.5;
-	transition: 0.3s;
 }
 
 main .cards i {
@@ -216,6 +241,12 @@ main .cards i {
 	font-size: 4em;
 	margin-bottom: 0.3em;
 	display: block !important;
+}
+
+main .cards img {
+	width: 90%;
+	display: block;
+	margin: 0 auto 0.5em auto;
 }
 
 main p {
@@ -236,8 +267,14 @@ main .book-image {
 	margin-bottom: 1em;
 }
 
-main .book-image img {
-	width: 60%;
+main .container picture {
+	display: block;
+    text-align: center;
+    margin-top: 1em;
+}
+
+main .container picture img {
+	width: 60vw;
 }
 
 nav ul.breadcrumbs {
@@ -267,7 +304,37 @@ nav ul.breadcrumbs li a:hover, nav ul.breadcrumbs li a:focus {
 }
 
 footer {
-	margin: 1em 0;
+	margin-top: 1em;
+}
+
+footer .container {
+	display: grid;
+	grid-template-columns: 80% 20%;
+	row-gap: 1em;
+}
+
+footer .logo {
+	font-family: 'Space Mono', monospace;
+	font-size: 1.2em;
+	position: relative;
+}
+
+footer .logo a {
+	position: absolute;
+  	top: 50%;
+	left: 10%;
+	z-index: 1;
+}
+
+footer .logo img {
+	clip-path: circle(60px at center);
+	opacity: 0.3;
+}
+
+footer .texts {
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 footer p {
@@ -287,6 +354,7 @@ footer a:hover, footer a:focus {
 footer .arrow {
 	text-align: right;
 	margin-bottom: 1.5em;
+	margin-top: 1.5em;
 }
 
 footer .arrow i {
@@ -316,7 +384,11 @@ footer .arrow i {
 
 	header .logo,  header .container > i {
 		font-size: 1.2em;
-	}	
+	}
+
+	main .books img {
+		width: 100%;
+	}
 
 	main .cards {
 		grid-template-columns: auto auto;
@@ -324,18 +396,23 @@ footer .arrow i {
 		column-gap: 2em;
 		justify-items: center;
 		align-items: center;
+		grid-auto-rows: 1fr;
 	}
 
 	main .cards a {
 		width: 15em;
 	}
 
-	main .books {
-		height: 25em;
+	main .cards img {
+		width: 70%;
 	}
 
 	main p {
 		font-size:1em;
+	}
+
+	main .container picture img {
+		width: 50vw;
 	}
 }
 
@@ -356,12 +433,12 @@ footer .arrow i {
 		font-size: 1.4em;
 	}
 
-	header .container > i {
-		display: none;
+	header .logo svg {
+		height: 50px;
 	}
 
-	main .books {
-		height: 60vh;
+	header .container > i {
+		display: none;
 	}
 
 	main p {
@@ -384,6 +461,11 @@ footer .arrow i {
 		width: 80%;
 		font-size: 1.3em;
 		padding: 2em;
+	}
+
+	
+	main .cards img {
+		width: 90%;
 	}
 
 	main nav#main-menu {
@@ -419,11 +501,46 @@ footer .arrow i {
 		font-weight: bold;
 	}
 
-	main .book-image img {
-		width: 30%;
+	main .container picture img {
+		height: 30vw;
+		width: auto;
+	}
+
+	main .texts-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		row-gap: 1em;
+	}
+
+	main .texts-grid p:first-child {
+		grid-column: 1 / 3;
+		align-self: center;
+	}
+
+	main .texts-grid figure:nth-child(4) {
+		grid-row: 2 / 3;
+		grid-column: 1 / 2;
+	}
+
+	main .texts-grid p:nth-child(3) {
+		grid-row: 2 / 3;
+		grid-column: 2 / 4;
+		align-self: center;
+	}
+
+	main .texts-grid p:nth-child(5) {
+		grid-column: 1 / 4;
+	}
+
+	main .texts-grid p:last-child {
+		grid-column: 1 / 4;
 	}
 	
 	footer p {
 		font-size: 0.9em;
+	}
+
+	footer .logo a {
+		left: 4%;
 	}
 }

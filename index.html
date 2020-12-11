@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>PEC 1 - Herramientas HTML y CSS</title>
+    <link rel='icon' href='favicon.ico' type='image/x-icon'>
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html"><i class="fas fa-book-reader" aria-hidden="true"></i>Portal Literario</a>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.5 52" height="30"><defs><style>.cls-1{fill:none;stroke:#ece3e0;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><line class="cls-1" x1="1" y1="52" x2="1" y2="4.82"/><line class="cls-1" x1="20.5" y1="52" x2="20.5" y2="4.82"/><path class="cls-1" d="M1,5.43a2.46,2.46,0,0,1,0-.28C1,2.86,5.37,1,10.75,1S20.5,2.86,20.5,5.15"/><line class="cls-1" x1="7" y1="9" x2="7" y2="50"/><line class="cls-1" x1="14" y1="9" x2="14" y2="50"/></g></g></svg>
+                    Portal Literario</a>
             </div>
             <i class="fas fa-bars" id="menu" aria-hidden="true"></i><span class="sr-only">Mostrar menú</span>
         </div>
@@ -29,10 +32,16 @@
                 <li><a href="#">Novela Histórica</a></li>
             </ul>
         </nav>
+        <div class="books">
+            <picture>
+                <source media="(max-width: 767px)" srcset="/img/books1-mobile.jpg">
+                <source media="(max-width: 1023px)" srcset="/img/books1-tablet.jpg">
+                <img src="/img/books1-desktop.jpg" alt="Imagen de libros apilados">
+            </picture>
+        </div>
         <div class="container">
-            <div class="books"></div>
-            <p class="small"><a href="https://www.flickr.com/photos/45256566@N04/8314929977">"Books HD"</a> de <a href="https://www.flickr.com/photos/45256566@N04">Abee5</a> tiene licencia <a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=html">CC BY 2.0</a></p>
-            <h1>Bienvenido al Portal Literario, un lugar en donde podrás encontrar información sobre de miles de libros, organizada por géneros literarios.</h1>
+            <p class="small"><a href="https://www.flickr.com/photos/40646519@N00/2170308755">"Books"</a> de <a href="https://www.flickr.com/photos/40646519@N00">Joe Shlabotnik</a> tiene licencia <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a></p>
+            <h1>Bienvenido al Portal Literario, un lugar en donde podrás encontrar información sobre miles de libros, organizada por géneros literarios.</h1>
             <h2>Categorías</h2>
             <div class="cards">
                 <a href="aventura.html"><i class="fas fa-book" aria-hidden="true"></i>Novela de Aventuras</a>
@@ -46,11 +55,18 @@
     </main>
     <footer>
         <div class="container">
+            <div class="logo">
+                <a href="index.html">Portal Literario</a>
+                <img src="/img/books2.jpg" alt="Imagen de libros" />
+            </div>
             <div class="arrow">
                 <a href="#top" title="Volver al inicio"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i><span class="sr-only">Volver al inicio de la página</span></a>
             </div>
-            <p>2020 Angelo Svart</p>
-            <p>Textos elaborados a partir de información consultada en <a href="https://es.wikipedia.org/">Wikipedia</a></p>
+            <div class="texts">
+                <p>2020 Angelo Svart</p>
+                <p>Textos elaborados a partir de información consultada en <a href="https://es.wikipedia.org/">Wikipedia</a></p>
+                <p class="small"><a href="https://www.flickr.com/photos/29233640@N07/6101573515">"Books"</a> de <a href="https://www.flickr.com/photos/29233640@N07">Robert Couse-Baker</a> tiene licencia <a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=html">CC BY 2.0</a></p>
+            </div>
         </div>
     </footer>
     <script src="./index.js"></script>
