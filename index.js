@@ -2,7 +2,7 @@ window.onload = function() {
 
     const menu = document.querySelector("#menu");
     const hiddenMenu = document.querySelector("#main-menu");
-    const closeBtn = document.querySelector("#main-menu i");
+    const closeBtn = document.querySelector("#main-menu .closebtn");
 
     menu.addEventListener("click", event => hiddenMenu.style.width = "65vw");
     closeBtn.addEventListener("click", event => hiddenMenu.style.width = "0");

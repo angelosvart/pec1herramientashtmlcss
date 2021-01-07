@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <title>PEC 2 - Herramientas HTML y CSS</title>
     <link rel='icon' href='favicon.ico' type='image/x-icon'>
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 <body>
     <header>
@@ -17,12 +16,21 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.5 52" height="30"><defs><style>.cls-1{fill:none;stroke:#ece3e0;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><line class="cls-1" x1="1" y1="52" x2="1" y2="4.82"/><line class="cls-1" x1="20.5" y1="52" x2="20.5" y2="4.82"/><path class="cls-1" d="M1,5.43a2.46,2.46,0,0,1,0-.28C1,2.86,5.37,1,10.75,1S20.5,2.86,20.5,5.15"/><line class="cls-1" x1="7" y1="9" x2="7" y2="50"/><line class="cls-1" x1="14" y1="9" x2="14" y2="50"/></g></g></svg>
                     Portal Literario</a>
             </div>
-            <i class="fas fa-bars" id="menu" aria-hidden="true"></i><span class="sr-only">Mostrar menú</span>
+            <div id="menu" aria-hidden="true">
+                <span class="sr-only">Mostrar menú</span>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </header>
     <main>
         <nav id="main-menu">
-            <div class="closebtn"><i class="fas fa-times"  aria-hidden="true" title="Cerrar Menú"></i><span class="sr-only">Cerrar menú</span></div>
+            <div class="closebtn">
+                <span class="sr-only">Cerrar menú</span>
+                <div></div>
+                <div></div>
+            </div>
             <ul>
                 <li><a href="aventura.html">Novela de Aventuras</a></li>
                 <li><a href="fantasia.html">Novela de Fantasía</a></li>
@@ -44,12 +52,24 @@
             <h1>Bienvenido al Portal Literario, un lugar en donde podrás encontrar información sobre miles de libros, organizada por géneros literarios.</h1>
             <h2>Categorías</h2>
             <div class="cards">
-                <a href="aventura.html"><i class="fas fa-book" aria-hidden="true"></i>Novela de Aventuras</a>
-                <a href="fantasia.html"><i class="fas fa-book" aria-hidden="true"></i>Novela de Fantasía</a>
-                <a href="#"><i class="fas fa-book" aria-hidden="true"></i>Novela Policíaca</a>
-                <a href="#"><i class="fas fa-book" aria-hidden="true"></i>Novela de Terror</a>
-                <a href="#"><i class="fas fa-book" aria-hidden="true"></i>Novela Romántica</a>
-                <a href="#"><i class="fas fa-book" aria-hidden="true"></i>Novela Histórica</a>
+                <a href="aventura.html">
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"/></svg>
+                    Novela de Aventuras</a>
+                <a href="fantasia.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"/></svg>
+                    Novela de Fantasía</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"/></svg>
+                    Novela Policíaca</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"/></svg>
+                    Novela de Terror</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"/></svg>
+                    Novela Romántica</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"/></svg>
+                    Novela Histórica</a>
             </div>
         </div>
     </main>
@@ -60,7 +80,13 @@
                 <img src="/img/books2.jpg" alt="Imagen de libros" />
             </div>
             <div class="arrow">
-                <a href="#top" title="Volver al inicio"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i><span class="sr-only">Volver al inicio de la página</span></a>
+                <a href="#top" title="Volver al inicio">
+                    <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve" aria-hidden="true">
+                    <path d="M16,2C8.3,2,2,8.3,2,16s6.3,14,14,14s14-6.3,14-14S23.7,2,16,2z M18.7,19.5c0.4,0.4,0.4,1,0,1.4c-0.2,0.2-0.5,0.3-0.7,0.3
+                        s-0.5-0.1-0.7-0.3l-4.2-4.2c-0.4-0.4-0.4-1,0-1.4l4.2-4.2c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4L15.2,16L18.7,19.5z"/>
+                    </svg>
+                    <span class="sr-only">Volver al inicio de la página</span></a>
             </div>
             <div class="texts">
                 <p>2020 Angelo Svart</p>

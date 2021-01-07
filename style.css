@@ -108,15 +108,25 @@ header a {
 	color:var(--main-lightest-color);
 }
 
-header .container > i {
+header .container #menu {
 	justify-self: end;
 	align-self: center;
 	cursor: pointer;
-	color:var(--main-lightest-color);
 }
 
-header a:focus,  header a:hover, header .container > i:hover, header .container > i:focus  {
+header .container #menu div {
+	width: 1.1em;
+    height: 0.15em;
+    background-color: var(--main-lightest-color);
+    margin: 0.2em 0;
+}
+
+header a:focus,  header a:hover {
 	color: var(--main-darker-accent);
+}
+
+header .container #menu:hover div, header .container #menu:focus div {
+	background-color: var(--main-darker-accent);
 }
 
 main {
@@ -167,17 +177,28 @@ main nav#main-menu ul li a:hover, main nav#main-menu ul li a:focus {
 main nav#main-menu .closebtn {
 	margin-right: 1em;
 	margin-top: 1em;
-}
-
-main nav#main-menu .closebtn i {
-	font-size: 1.5em;
 	cursor: pointer;
 	position: absolute;
 	right: 0.7em;
 }
 
-main nav#main-menu .closebtn i:focus, main nav#main-menu .closebtn i:hover {
-	color: var(--main-darker-accent);
+main nav#main-menu .closebtn div {
+	width: 1.1em;
+    height: 0.15em;
+    background-color: var(--main-color);
+    margin: 0.2em 0;
+}
+
+main nav#main-menu .closebtn div:nth-child(2) {
+	transform: rotate(-45deg) translate(6px, 6px);
+}
+
+main nav#main-menu .closebtn div:last-child {
+	transform: rotate(45deg) translate(2px, -9px);
+}
+
+main nav#main-menu .closebtn:focus div, main nav#main-menu .closebtn:hover div {
+	background-color: var(--main-darker-accent);
 }
 
 main .small {
@@ -236,11 +257,11 @@ main .cards a:hover, main .cards a:focus {
 	opacity: 0.5;
 }
 
-main .cards i {
-	color: var(--main-darker-accent);
-	font-size: 4em;
-	margin-bottom: 0.3em;
-	display: block !important;
+main .cards svg {
+	fill: var(--main-darker-accent);
+	padding-bottom: 1em;
+	width: 4em;
+	margin: 0 auto;
 }
 
 main .cards img {
@@ -361,8 +382,14 @@ footer .arrow {
 	margin-top: 1.5em;
 }
 
-footer .arrow i {
-	font-size: 2em;
+footer .arrow svg {
+	fill: var(--main-lightest-color);
+	width: 3em;
+	transform: rotate(90deg)
+}
+
+footer .arrow a:hover svg, footer .arrow a:focus svg {
+	fill: var(--main-darker-accent);
 }
 
 .sr-only {
@@ -386,7 +413,7 @@ footer .arrow i {
 		width: calc(100vw - 2.5em);
 	}
 
-	header .logo,  header .container > i {
+	header .logo {
 		font-size: 1.2em;
 	}
 
@@ -441,7 +468,7 @@ footer .arrow i {
 		height: 50px;
 	}
 
-	header .container > i {
+	header .container #menu {
 		display: none;
 	}
 
@@ -497,6 +524,7 @@ footer .arrow i {
 	main nav#main-menu ul li:last-child {
 		border-right: 0;
 	}
+
 	main nav#main-menu .closebtn {
 		display: none;
 	}

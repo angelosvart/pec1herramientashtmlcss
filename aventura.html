@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <title>PEC 2 - Herramientas HTML y CSS</title>
     <link rel='icon' href='favicon.ico' type='image/x-icon'>
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 <body>
     <header>
@@ -17,12 +16,21 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.5 52" height="30"><defs><style>.cls-1{fill:none;stroke:#ece3e0;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><line class="cls-1" x1="1" y1="52" x2="1" y2="4.82"/><line class="cls-1" x1="20.5" y1="52" x2="20.5" y2="4.82"/><path class="cls-1" d="M1,5.43a2.46,2.46,0,0,1,0-.28C1,2.86,5.37,1,10.75,1S20.5,2.86,20.5,5.15"/><line class="cls-1" x1="7" y1="9" x2="7" y2="50"/><line class="cls-1" x1="14" y1="9" x2="14" y2="50"/></g></g></svg>
                     Portal Literario</a>
             </div>
-            <i class="fas fa-bars" id="menu" aria-hidden="true"></i><span class="sr-only">Mostrar menú</span>
+            <div id="menu" aria-hidden="true">
+                <span class="sr-only">Mostrar menú</span>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </header>
     <main>
         <nav id="main-menu">
-            <div class="closebtn"><i class="fas fa-times"  aria-hidden="true" title="Cerrar Menú"></i><span class="sr-only">Cerrar menú</span></div>
+            <div class="closebtn">
+                <span class="sr-only">Cerrar menú</span>
+                <div></div>
+                <div></div>
+            </div>
             <ul>
                 <li><a href="aventura.html" class="active">Novela de Aventuras</a></li>
                 <li><a href="fantasia.html">Novela de Fantasía</a></li>
@@ -44,11 +52,21 @@
             <h2>Libros</h2>
             <div class="cards">
                 <a href="robinson-crusoe.html"><img src="/img/robinson_crusoe-thumbnail.png" alt="Libro Robinson Crusoe"><cite>Robinson Crusoe, Daniel Defoe</cite></a>
-                <a href="#"><i class="fas fa-book-open" aria-hidden="true"></i><cite>Los viajes de Gulliver, Jonathan Swift</cite></a>
-                <a href="#"><i class="fas fa-book-open" aria-hidden="true"></i><cite>Las minas del rey Salomón, Henry Rider Haggard</cite></a>
-                <a href="#"><i class="fas fa-book-open" aria-hidden="true"></i><cite>La isla del tesoro, Robert Louis Stevenson</cite></a>
-                <a href="#"><i class="fas fa-book-open" aria-hidden="true"></i><cite>La vuelta al mundo en 80 días, Julio Verne</cite></a>
-                <a href="#"><i class="fas fa-book-open" aria-hidden="true"></i><cite>Viaje al centro de la Tierra, Julio Verne</cite></a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"/></svg>
+                    <cite>Los viajes de Gulliver, Jonathan Swift</cite></a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"/></svg>
+                    <cite>Las minas del rey Salomón, Henry Rider Haggard</cite></a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"/></svg>
+                    <cite>La isla del tesoro, Robert Louis Stevenson</cite></a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"/></svg>
+                    <cite>La vuelta al mundo en 80 días, Julio Verne</cite></a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"/></svg>
+                    <cite>Viaje al centro de la Tierra, Julio Verne</cite></a>
             </div>
         </div>
     </main>
@@ -59,7 +77,13 @@
                 <img src="/img/books2.jpg" alt="Imagen de libros" />
             </div>
             <div class="arrow">
-                <a href="#top" title="Volver al inicio"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i><span class="sr-only">Volver al inicio de la página</span></a>
+                <a href="#top" title="Volver al inicio">
+                    <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve" aria-hidden="true">
+                    <path d="M16,2C8.3,2,2,8.3,2,16s6.3,14,14,14s14-6.3,14-14S23.7,2,16,2z M18.7,19.5c0.4,0.4,0.4,1,0,1.4c-0.2,0.2-0.5,0.3-0.7,0.3
+                        s-0.5-0.1-0.7-0.3l-4.2-4.2c-0.4-0.4-0.4-1,0-1.4l4.2-4.2c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4L15.2,16L18.7,19.5z"/>
+                    </svg>
+                    <span class="sr-only">Volver al inicio de la página</span></a>
             </div>
             <div class="texts">
                 <p>2020 Angelo Svart</p>
