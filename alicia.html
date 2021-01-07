@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');:root{--main-color: #192340;--main-darker-accent: #4273A6;--main-darkest-color: #151318;--main-lighter-accent: #648BA3;--main-lightest-color: #ECE3E0}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{width:100%;min-height:100vh;font-size:16px;font-family:'Raleway',sans-serif;background-color:var(--main-darkest-color);display:grid;align-items:center}.container{width:calc(100vw - 1.5em);margin:0 auto}h1{color:var(--main-lightest-color);font-size:1.25em;font-weight:normal;margin-bottom:1.5em;text-align:center;letter-spacing:1.3px;line-height:1.5em}a{text-decoration:none}header{padding:1em 0;font-size:1.2em;background-color:var(--main-color);box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12);position:sticky;top:0;z-index:1}header .container{display:grid;grid-template-columns:3fr 1fr}header .logo{font-family:'Space Mono',monospace;font-size:0.9em}header .logo svg{vertical-align:bottom;display:inline-block}header a{color:var(--main-lightest-color)}header .container #menu{justify-self:end;align-self:center}header .container #menu div{width:1.1em;height:0.15em;background-color:var(--main-lightest-color);margin:0.2em 0}main{margin-bottom:1em;animation:fadeIn 0.8s ease-in}@keyframes fadeIn{from{opacity:0}to{opacity:1}}main nav#main-menu{position:fixed;top:0;right:0;width:0;height:100vh;overflow-x:hidden;font-size:0.9em;z-index:3;background-color:var(--main-lightest-color)}main nav#main-menu ul{list-style:none;padding:1em}main nav#main-menu ul li{padding:0.5em 0;margin:0.5em 0;border-bottom:1px solid var(--main-color)}main nav#main-menu ul li a{color:var(--main-darkest-color)}main nav#main-menu .closebtn{margin-right:1em;margin-top:1em;position:absolute;right:0.7em}main nav#main-menu .closebtn div{width:1.1em;height:0.15em;background-color:var(--main-color);margin:0.2em 0}main nav#main-menu .closebtn div:nth-child(2){transform:rotate(-45deg) translate(6px,6px)}main nav#main-menu .closebtn div:last-child{transform:rotate(45deg) translate(2px,-9px)}main .small{font-size:0.6em;margin-bottom:2.8em;color:var(--main-lightest-color);text-align:center;opacity:0.7}main .small a{color:var(--main-lightest-color)}main p{color:var(--main-lightest-color);line-height:1.5em;letter-spacing:1.3px;font-size:0.9em;width:90%;margin:0 auto 1em auto}main .book-image{text-align:center;margin-bottom:1em}main .texts-grid figure{margin-top:2em}main .container picture{display:block;text-align:center;margin-top:1em}main .container picture img{width:60vw}nav ul.breadcrumbs{list-style:none;padding:1em;font-size:0.7em;margin-bottom:2em;margin-top:1em}nav ul.breadcrumbs li{display:inline;color:var(--main-lightest-color)}nav ul.breadcrumbs li+li:before{padding:0.1em;content:"/\00a0"}nav ul.breadcrumbs li a{font-weight:bold;color:var(--main-lightest-color)}.sr-only{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}@media only screen and (min-width:768px){h1{font-size:1.5em}.container{width:calc(100vw - 2.5em)}header .logo{font-size:1.2em}main p{font-size:1em}main .container picture img{width:50vw}}@media only screen and (min-width:1024px){h1{font-size:1.7em}.container{width:calc(100vw - 7em)}header .logo{font-size:1.4em}header .logo svg{height:50px}header .container #menu{display:none}main p{width:80%}main nav#main-menu{display:block;position:unset;width:100%;height:auto;margin-bottom:1em}main nav#main-menu ul{text-align:center;background-color:var(--main-lightest-color)}main nav#main-menu ul li{display:inline;border-right:1px solid var(--main-color);padding:0 1em;border-bottom:0;letter-spacing:1.3px;font-size:0.85em}main nav#main-menu ul li:last-child{border-right:0}main nav#main-menu .closebtn{display:none}main nav#main-menu a.active{font-weight:bold}main .container picture img{height:30vw;width:auto}main .texts-grid{display:grid;grid-template-columns:repeat(3,1fr);row-gap:1em}main .texts-grid p:first-child{grid-column:1 / 3;align-self:center}}
+    </style>
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
     <title>PEC 2 - Herramientas HTML y CSS</title>
     <link rel='icon' href='favicon.ico' type='image/x-icon'>
 </head>
@@ -62,7 +66,7 @@
                         <picture>
                             <source type="image/webp" srcset="/img/alice-drawing.webp">
                             <source type="image/jpeg" srcset="/img/alice-drawing.jpg">
-                            <img src="/img/alice-drawing.jpg" alt="Dibujo de Alicia en el país de las maravillas">
+                            <img src="/img/alice-drawing.jpg" alt="Dibujo de Alicia en el país de las maravillas" loading="lazy">
                         </picture>
                         <figcaption><p class="small half"><a href="https://www.flickr.com/photos/43021516@N06/4408113761">"Alice in Wonderland (Illustrator: Winter, 1924) Mad Tea Party"</a> de <a href="https://www.flickr.com/photos/43021516@N06">Toronto Public Library Special Collections</a> tiene licencia <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p></figcaption>
                     </figure>
@@ -71,7 +75,7 @@
                         <picture>
                             <source type="image/webp" srcset="/img/alice-drawing-2.webp">
                             <source type="image/jpeg" srcset="/img/alice-drawing-2.jpg">
-                            <img src="/img/alice-drawing-2.jpg" alt="Dibujo de Alicia en el país de las maravillas">
+                            <img src="/img/alice-drawing-2.jpg" alt="Dibujo de Alicia en el país de las maravillas" loading="lazy">
                         </picture>
                         <figcaption><p class="small half"><a href="https://www.flickr.com/photos/43021516@N06/4382428505">"Alice in Wonderland (Illustrator: Tarrant, 1916) Alice meets the White Rabbit"</a> de <a href="https://www.flickr.com/photos/43021516@N06">Toronto Public Library Special Collections</a> tiene licencia <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p></figcaption>
                     </figure>
@@ -85,7 +89,7 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html">Portal Literario</a>
-                <img src="/img/books2.jpg" alt="Imagen de libros" />
+                <img src="/img/books2.jpg" alt="Imagen de libros" loading="lazy"/>
             </div>
             <div class="arrow">
                 <a href="#top" title="Volver al inicio">
